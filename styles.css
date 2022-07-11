@@ -9,7 +9,7 @@ form {
     padding: 1rem;
     position: relative;
     margin: 2rem auto;
-    width: 75%;
+    width: 65%;
 }
 h3 {
     display: inline-block;
@@ -21,6 +21,9 @@ h3 {
     font-weight: bold;
     padding: 0.5rem;
 }
+.labinput {
+    width: 30%  ;
+}
 div {
     border: solid;
     margin: 0.5rem auto;
@@ -28,12 +31,15 @@ div {
 }
 .quizdiv {
     padding: 0.5rem 0;
-    width: 50%;
+    width: 40%;
 }
 .quiz {
     font-size: large;
     font-weight: bold;
     display: inline-block;
+}
+.quizinput {
+    width: 30%;
 }
 table {
     margin: 0.5rem auto;
@@ -102,11 +108,14 @@ img {
     width: 50px;
 }
 @media (max-width: 1000px) {
+    form {
+        width: 85%;
+    }
     div {
         width: 98%;
     }
     .quizdiv {
-        width: 60%;
+        width: 40%;
     }
     table {
         width: 99%;
