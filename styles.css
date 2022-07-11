@@ -1,0 +1,114 @@
+body {
+    background-image: linear-gradient(to top right, #6E85B7, #B2C8DF);
+    color: #0e2c6b;
+    text-align: center;
+    /* font-family: 'Edu SA Beginner', cursive; */
+}
+form {
+    border: solid;
+    padding: 1rem;
+    position: relative;
+    margin: 2rem auto;
+    width: 75%;
+}
+h3 {
+    display: inline-block;
+    padding: 0.5rem;
+}
+.lab {
+    display: inline-block;
+    font-size: large;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+div {
+    border: solid;
+    margin: 0.5rem auto;
+    width: 75%;
+}
+.quizdiv {
+    padding: 0.5rem 0;
+    width: 50%;
+}
+.quiz {
+    font-size: large;
+    font-weight: bold;
+    display: inline-block;
+}
+table {
+    margin: 0.5rem auto;
+    width: 75%;
+}
+#section {
+    font-weight: bolder;
+    font-size: larger;
+    height: 30px;
+    width: 50px;
+}
+.submit {
+    background-color: #3a5694;
+    border-radius: 8rem;
+    color: #B2C8DF;
+    display: inline-block;
+    margin: 0.5rem 2rem;
+    padding: 10px 20px;
+    /* position: absolute;
+    left: 45%; */
+    transition: 0.5s;
+}
+/* .empty {
+    display: inline-block;
+    visibility: hidden;
+} */
+.reset {
+    background-color: #3a5694;
+    border-radius: 8rem;
+    color: #B2C8DF;
+    display: inline-block;
+    margin: 0.5rem auto;
+    padding: 10px 25px;
+    /* position: absolute;
+    left: 55%; */
+    transition: 0.5s;
+}
+.submit:hover {
+    font-size: 150%;
+    transition: 0.5s;
+}
+.reset:hover {
+    font-size: 150%;
+    transition: 0.5s;
+}
+.score {
+    border: solid;
+    font-size: x-large;
+    font-weight: 800;
+    display: inline-block;
+    padding: 1rem;
+    width: 12rem;
+}
+
+footer {
+    background-color: #3a5694;
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+h5 {
+    color: #B2C8DF;
+}
+img {
+    border-radius: 100%;
+    margin: 1rem 1rem;
+    width: 50px;
+}
+@media (max-width: 1000px) {
+    div {
+        width: 98%;
+    }
+    .quizdiv {
+        width: 60%;
+    }
+    table {
+        width: 99%;
+    }
+}
