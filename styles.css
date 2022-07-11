@@ -100,10 +100,6 @@ a:hover {
     font-size: larger;
     transition: 0.4s;
 }
-img:hover {
-    transition: 0.4s;
-    width: 4rem;
-}
 
 footer {
     background-color: #3a5694;
@@ -119,6 +115,10 @@ img {
     transition: 0.4s;
     width: 50px;
 }
+img:hover {
+    transition: 0.4s;
+    width: 60px;
+}
 @media (max-width: 1000px) {
     form {
         width: 85%;
@@ -131,5 +131,11 @@ img {
     }
     table {
         width: 99%;
+    }
+    img {
+        width: 40px;
+    }
+    img:hover {
+        width: 50px;
     }
 }
