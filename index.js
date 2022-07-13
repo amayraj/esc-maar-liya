@@ -1,8 +1,3 @@
-// $('#form').submit(function(event) {
-//   event.preventDefault();
-//   window.history.back();
-// });
-
 function calc() {
   let labs = [], quiz = [], normalized = [];
   let sxn = document.getElementById("section").value;
@@ -82,15 +77,5 @@ function calc() {
   score += (0.10 * quiz[0] * 100 / 154) + (0.15 * quiz[1] * 100 / 158) + (0.15 * quiz[2] * 100 / 200);
   score = score.toFixed(2);
   document.getElementById("score").innerHTML = score + "%";
-  // sleep(20000);
-  // alert("Your score:   "+score);
-  // setTimeout(() => {  return false; }, 20000);
-}
-
-function sleep(milliseconds) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < milliseconds);
+  // return false;
 }
