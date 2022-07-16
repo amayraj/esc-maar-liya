@@ -1,6 +1,7 @@
 function calc() {
   let labs = [], quiz = [], normalized = [];
   let sxn = document.getElementById("section").value;
+  let week = document.getElementById("weekday").value;
   let i;
   for(i = 0; i < 10; i++) {
     labs.push(document.getElementById("lab"+(i+1)).value);
@@ -13,11 +14,17 @@ function calc() {
   normalized.push(labs[2] * 100 / 90);
   normalized.push(labs[3] * 100 / 100);
   normalized.push(labs[4] * 100 / 100);
-  normalized.push(labs[5] * 100 / 110);
+  if (week.localeCompare("wed") == 0) {
+    normalized.push(labs[5] * 100 / 120);
+  }
+  else {
+    normalized.push(labs[5] * 100 / 110);
+  }
   normalized.push(labs[6] * 100 / 150);
   normalized.push(labs[7] * 100 / 150);
   normalized.push(labs[8] * 100 / 150);
   normalized.push(labs[9] * 100 / 150);
+
   // console.log(sxn);
   // console.log(normalized);
   // console.log(quiz);

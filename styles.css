@@ -1,6 +1,10 @@
+
+html {
+    filter: hue-rotate(215deg);
+}
 body {
     background-image: linear-gradient(to top right, #e7c4fe, #F3F1F5);
-    color: #511845;
+    color: #682259;
     text-align: center;
     /* font-family: 'Edu SA Beginner', cursive; */
 }
@@ -14,6 +18,9 @@ form {
 }
 h1 {
     font-weight: bold;
+    /* position: -webkit-sticky; */
+    /* position: sticky; */
+    /* top: 0; */
 }
 h3 {
     display: inline-block;
@@ -51,11 +58,19 @@ table {
     margin: 0.5rem auto;
     width: 75%;
 }
-#section {
+#section, #weekday {
     font-weight: bolder;
     font-size: larger;
     height: 30px;
-    width: 50px;
+    text-align: center;
+}
+#section {
+    margin-top: 1.8rem;
+    width: 3rem;
+}
+#weekday {
+    margin-bottom: 1.8rem;
+    width: 8.5rem;
 }
 .submit {
     background-color: #b682e7;
