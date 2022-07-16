@@ -101,9 +101,9 @@ table {
     transition: 0.5s;
 }
 .submit:hover {
-    background-image: linear-gradient(#9b69c9, #b682e7);
+    background-image: linear-gradient(#aa7bd6, #b682e7);
 }
-.submit:hover, .reset:hover {
+.submit:hover, .reset:hover, #rick:hover {
     transform: scale(1.15,1.15);
     /* font-size: 125%;
     transition: 0.5s; */
@@ -117,6 +117,23 @@ table {
     display: inline-block;
     padding: 1rem;
     width: 12rem;
+}
+#rick {
+    background-color: #F3F1F5;
+    border-radius: 1rem;
+    color: #9b69c9;
+    display: inline-block;
+    font-size: large;
+    font-weight: bolder;
+    margin: 0.5rem;
+    padding: 0.1rem 0.7rem;
+    /* position: absolute;
+    left: 55%; */
+    transition: 0.5s;
+}
+#rickblur {
+    display: inline-block;
+    filter: blur(10px);
 }
 .Gform {
     border-radius: 1.5rem;
@@ -162,7 +179,7 @@ img:hover {
     /* width: 60px; */
 }
 @media (max-width: 1000px) {
-    form {
+    form, .Gform {
         width: 85%;
     }
     div {
