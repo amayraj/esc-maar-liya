@@ -102,16 +102,16 @@ table {
 }
 .submit:hover {
     background-image: linear-gradient(#9b69c9, #b682e7);
-    font-size: 125%;
-    transition: 0.5s;
 }
-.reset:hover {
-    font-size: 125%;
-    transition: 0.5s;
+.submit:hover, .reset:hover {
+    transform: scale(1.15,1.15);
+    /* font-size: 125%;
+    transition: 0.5s; */
 }
 .score {
     border: solid;
     border-radius: 1.5rem;
+    filter: blur(10px);
     font-size: x-large;
     font-weight: 800;
     display: inline-block;
@@ -123,23 +123,32 @@ table {
     width: 65%;
 }
 a {
-    color: #EB4747; 
+    color: #EB4747;
     font-style: italic;
     font-weight: bolder;
     text-decoration: none;
 }
-a:hover {
-    font-size: larger;
+span {
     transition: 0.4s;
+    width: auto;
+}
+span:hover {
+    display: inline-block;
+    /* font-size: larger; */
+    transform: scale(1.05, 1.05);
+    width: auto;
 }
 
 footer {
     background-color: #b682e7;
     margin-top: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
 }
-h5 {
+h5, h6 {
     color: #F3F1F5;
+}
+.email {
+    color: #fdcdff;
 }
 img {
     border-radius: 100%;
@@ -148,8 +157,9 @@ img {
     width: 50px;
 }
 img:hover {
-    transition: 0.4s;
-    width: 60px;
+    transform: scale(1.2,1.2);
+    /* transition: 0.4s; */
+    /* width: 60px; */
 }
 @media (max-width: 1000px) {
     form {

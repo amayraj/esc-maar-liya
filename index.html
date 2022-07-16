@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- <div class="bodybox"> -->
-    <form name="foorm" action="" autocomplete="off" onkeydown="return event.key != 'Enter';">
+    <form name="foorm" action="" autocomplete="off" onkeydown="return event.key != 'Enter';" onsubmit="return false">
         <h1>ESC101 % Calculator (Y21 Sem-II)</h1>  
         <h3><label for="section">Select your section:</label></h3>
         <select name="section" id="section" required>
@@ -33,54 +33,54 @@
             <tr>
                 <td>
                     <div>
-                        <label class="lab">Lab 1:</label>
+                        <label for="lab1" class="lab">Lab 1:</label>
                         <input class="labinput" type="number" min="0" max="80" name="lab1" id="lab1" required>
                     </div>
                     
                     <div>
-                        <label class="lab">Lab 2:</label>
+                        <label for="lab2" class="lab">Lab 2:</label>
                         <input class="labinput" type="number" min="0" max="60" name="lab2" id="lab2" required>
                     </div>
                     
                     <div>
-                        <label class="lab">Lab 3:</label>
+                        <label for="lab3" class="lab">Lab 3:</label>
                         <input class="labinput" type="number" min="0" max="90" name="lab3" id="lab3" required>
                     </div>
                     
                     <div>
-                        <label class="lab">Lab 4:</label>
+                        <label for="lab4" class="lab">Lab 4:</label>
                         <input class="labinput" type="number" min="0" max="100" name="lab4" id="lab4" required>
                     </div>
                     
                     <div>
-                        <label class="lab">Lab 5:</label>
+                        <label for="lab5" class="lab">Lab 5:</label>
                         <input class="labinput" type="number" min="0" max="100" name="lab5" id="lab5" required>
                     </div>
                 </td>
                 
                 <td>
                     <div>
-                        <label class="lab">Lab 6:</label>
-                        <input class="labinput" type="number" min="0" max="110" name="lab6" id="lab6" required>
+                        <label for="lab6" class="lab">Lab 6:</label>
+                        <input class="labinput" type="number" min="0" max="120" name="lab6" id="lab6" required>
                     </div>
                     
                     <div>
-                        <label class="lab">Lab 7:</label>
+                        <label for="lab7" class="lab">Lab 7:</label>
                         <input class="labinput" type="number" min="0" max="150" name="lab7" id="lab7" required>
                     </div>
                     
                     <div>
-                        <label class="lab">Lab 8:</label>
+                        <label for="lab8" class="lab">Lab 8:</label>
                         <input class="labinput" type="number" min="0" max="150" name="lab8" id="lab8" required>
                     </div>
                     
                     <div>
-                        <label class="lab">Lab 9:</label>
+                        <label for="lab9" class="lab">Lab 9:</label>
                         <input class="labinput" type="number" min="0" max="150" name="lab9" id="lab9" required>
                     </div>
                     
                     <div>
-                        <label class="lab">Lab 10:</label>
+                        <label for="lab10" class="lab">Lab 10:</label>
                         <input class="labinput" type="number" min="0" max="150" name="lab10" id="lab10" required>
                     </div>
                 </td>
@@ -88,35 +88,36 @@
         </table>
         <table>
             <tr><td><div class="quizdiv">
-                    <label class="quiz">Quiz 1:</label>
+                    <label for="qz1" class="quiz">Quiz 1:</label>
                     <input class="quizinput" type="number" max="154" name="qz1" id="qz1" required>
             </div></td></tr>
 
             <tr><td><div class="quizdiv">
-                    <label class="quiz">Quiz 2:</label>
+                    <label for="qz2" class="quiz">Quiz 2:</label>
                     <input class="quizinput" type="number" max="158" name="qz2" id="qz2" required>
             </div></td></tr>
 
             <tr><td><div class="quizdiv">
-                    <label class="quiz">Quiz 3:</label>
+                    <label for="qz3" class="quiz">Quiz 3:</label>
                     <input class="quizinput" type="number" max="200" name="qz3" id="qz3" required>
             </div></td></tr>
         </table>
 
-        <button class="submit" type="button" onclick="calc();">Submit</button>
-        <button class="reset" type="button" onclick="location.reload();">Reset</button><br>
-        <!-- <input class="submit" type="submit" onclick="calc();">
-        <input class="reset" type="reset" onclick="location.reload();"><br> -->
+        <!-- <button class="submit" type="button" onclick="calc();">Submit</button>
+        <button class="reset" type="button" onclick="location.reload();">Reset</button><br> -->
+        <input class="submit" type="submit" onclick="calc();">
+        <input class="reset" type="reset" onclick="location.reload();"><br>
         <h3>Your Score:</h3>
         <div class="score" id="score">0 %</div>
     </form>
-    <div class="Gform"><h4>Please fill this <a href="https://forms.gle/qBM5vm9VGJKRBGQq7" target="_blank">Google form</a> for calculating average</h3></div>
+    <div class="Gform"><h4>Please fill this <span><a href="https://forms.gle/qBM5vm9VGJKRBGQq7" target="_blank">Google form</a></span> for calculating average</h3></div>
 
         <footer>
-            <h5>© Amay Raj 2022</h5>
-            <a href="mailto: amayraj21@iitk.ac.in"><img src="images/email.jpg" alt="Email"></a>
-            <a href="https://www.instagram.com/amayraj_/"><img src="images/insta.png" alt="insta"></a>
-            <a href="https://www.linkedin.com/in/amay-raj-5a3a57233/"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <h5>© 2022 Amay Raj</h5>
+            <h6>Email: <a class="email" href="mailto: amayraj21@iitk.ac.in" target="_blank">amayraj21@iitk.ac.in</a></h6>
+            <a href="https://www.instagram.com/amayraj_/" target="_blank"><img src="images/insta.png" alt="insta"></a>
+            <a href="https://wa.me/918696304685" target="_blank"><img src="images/whatsapp.jpg" alt="Email"></a>
+            <a href="https://www.linkedin.com/in/amay-raj-5a3a57233/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
         </footer>
         <script src="index.js"></script>
 </body>

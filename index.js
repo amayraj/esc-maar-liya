@@ -84,5 +84,7 @@ function calc() {
   score += (0.10 * quiz[0] * 100 / 154) + (0.15 * quiz[1] * 100 / 158) + (0.15 * quiz[2] * 100 / 200);
   score = score.toFixed(2);
   document.getElementById("score").innerHTML = score + "%";
+  document.getElementById("score").style.transition = "2.5s";
+  document.getElementById("score").style.filter = "blur(0)";
   // return false;
 }
